@@ -3,7 +3,7 @@
 const name = "Mario";
 
 // Dichiara la funzione qui.
-const saluta = (name) => `Ciao ${name}`;
+const saluta = (name) => `ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(saluta(name));
