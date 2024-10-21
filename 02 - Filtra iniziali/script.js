@@ -2,12 +2,18 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+const getElementByInitialLetter = (array, initialLetter, newArray = []) => {
+  for (let i = 0; i < array.length; i++) {
+    let currentElement = array[i];
+    if (currentElement[0] == initialLetter) newArray.push(currentElement);
+  }
+  return newArray;
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+const letter = "A";
+console.log(getElementByInitialLetter(names, letter));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
